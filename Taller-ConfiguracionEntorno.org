@@ -311,13 +311,13 @@ generar una nueva fila escriba presione la tecla TAB
 | ~C-a / C-e~ | Moverse al inicio o final de la oración | ~C-space M-w~ | Copiar el texto seleccionado          |
 | ~C-y~       | Pegar                                   | ~C-/ o C-x u~ | Revertir cambios                      |
 
-<Estudiante C>
+<Estudiante C> Henry Luisa
 #+ATTR_LATEX: :environment longtable :align |p{0.2\linewidth}|p{0.3\linewidth}|p{0.2\linewidth}|p{0.3\linewidth}|
-| *Comando* | *Descripción*                   | *Comando* | *Descripción*             |
-|-----------+---------------------------------+-----------+---------------------------|
-| ~C-x b~   | Cambiar entre buffers           | ~M-v~     | DDesplazarce hacia arriba |
-| ~C-g~     | Cancela un comando en ejecucion |           |                           |
-| ~C-l~     | Refrescar y centrar la pantalla |           |                           |
+| *Comando* | *Descripción*                   | *Comando* | *Descripción*                   |
+|-----------+---------------------------------+-----------+---------------------------------|
+| ~C-x b~   | Cambiar entre buffers           | ~M-v~     | Desplazarse hacia arriba        |
+| ~C-g~     | Cancela un comando en ejecución | ~C-k~     | Borra la linea                  |
+| ~C-l~     | Refrescar y centrar la pantalla | ~C-w~     | Corta el contenido seleccionado |
 
 <Estudiante D>
 #+ATTR_LATEX: :environment longtable :align |p{0.2\linewidth}|p{0.3\linewidth}|p{0.2\linewidth}|p{0.3\linewidth}|
@@ -359,15 +359,20 @@ Estudiante B: Auz Montezuma Juan Diego
 [[./images/JuanAuz-2.png]]
 **** Intento 3
 [[./images/JuanAuz-3.png]]
-Estudiante C: 
+Estudiante C: Henry Luisa 
 |-----------+---------|
 | iteración | Puntaje |
 |-----------+---------|
-|         1 |         |
-|         2 |         |
-|         3 |         |
+|         1 |     134 |
+|         2 |     140 |
+|         3 |     140 |
 |-----------+---------|
-
+**** Intento 1
+[[file:images/Henry-1.jpeg]]
+**** Intento 2
+[[file:images/Henry-2.jpeg]]
+**** Intento 3
+[[file:images/Henry-3.jpeg]]
 #+begin_src org
 [[./estudianteC-game.png]]
 #+end_src
@@ -410,7 +415,9 @@ Para consultar lo que hace un comando ejecute:
 2. **Estudiante B: Auz Montezuma Juan Diego** ~C-/~. C-/ runs the command undo (found in global-map), which is an
 interactive native-comp-function in ‘simple.el’. El comando deshace el
 último (o últimos) cambios que fueron realizados
-3. 
+3. **Estudiante C: Henry Luisa** ~C-v~C-v runs the command
+scroll-up-command (found in global-map), which is an interactive
+native-compiled Lisp function in ‘window.el’.   
 4. 
 
 **Comandos Difíciles**
@@ -418,19 +425,21 @@ interactive native-comp-function in ‘simple.el’. El comando deshace el
 2. **Estudiante B:Auz Montezuma Juan Diego** ~C-x b~. C-x b runs the command switch-to-buffer (found in global-map), which
 is an interactive native-comp-function in ‘window.el’. El comando abre
 el menú para cambiar de un buffer a otro
-3.
+3. **Estudiante C: Henry Luisa** ~C-c C-l~ C-x C-l runs the command
+   downcase-region (found in global-map), which is an interactive
+   built-in function in ‘C source code’.
 
 * Equipo de Trabajo
 Complete la información de los integrantes de grupo e indique el líder
 de grupo.
 
-|--------------------------+------------------------------+-------------|
-| Nombre                   | email                        | Rol         |
-|--------------------------+------------------------------+-------------|
-| Auz Montezuma Juan Diego | juan.auzmontezuma@epn.edu.ec | líder       |
-| Albert Einstein          | a.einstein@relativo.com      | colaborador |
-|                          |                              |             |
-|--------------------------+------------------------------+-------------|
+|---------------------------+------------------------------+-------------|
+| Nombre                    | email                        | Rol         |
+|---------------------------+------------------------------+-------------|
+| Auz Montezuma Juan Diego  | juan.auzmontezuma@epn.edu.ec | líder       |
+| Luisa Calapiña Henry Paul | henry.luisa@epn.edu.ec       | colaborador |
+|                           |                              |             |
+|---------------------------+------------------------------+-------------|
 
 * Verificación de Entregables [33%]:
 Ejecute ~C-c C-c~ sobre los ítems de tarea según se hayan cumplido o
