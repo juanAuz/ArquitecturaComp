@@ -5,8 +5,8 @@
 #+options: tasks:t tex:t timestamp:t title:t toc:nil todo:t |:t
 #+title: Taller de Configuracion de Entorno WSL
 #+date: 2026-04-08
-#+author: Juan Diego Auz Montezuma
-#+email: juan.auzmontezuma@epn.edu.ec
+#+author:Alban Salazar Emilio Fabian, Auz Montezuma Juan Diego , Luisa Calapiña Henry Paul, Quillupangui Lozano Ana María
+#+email: correo Emilio, juan.auzmontezuma@epn.edu.ec, Correo henry, Correo Ana Maria
 #+language: Espanol
 #+select_tags: export
 #+exclude_tags: noexport
