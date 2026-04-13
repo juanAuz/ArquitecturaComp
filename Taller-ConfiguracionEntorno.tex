@@ -1,4 +1,4 @@
-% Created 2026-04-12 dom 20:38
+% Created 2026-04-12 dom 22:00
 % Intended LaTeX compiler: pdflatex
 \documentclass{article}
 \usepackage[utf8]{inputenc}
@@ -22,10 +22,10 @@
 \usepackage{longtable}
 \author{Alban Salazar Emilio Fabian, Auz Montezuma Juan Diego , Luisa Calapiña Henry Paul, Quillupangui Lozano Ana María}
 \date{2026-04-08}
-\title{Taller de Configuracion de Entorno WSL}
+\title{Taller de Configuración de Entorno WSL}
 \hypersetup{
  pdfauthor={Alban Salazar Emilio Fabian, Auz Montezuma Juan Diego , Luisa Calapiña Henry Paul, Quillupangui Lozano Ana María},
- pdftitle={Taller de Configuracion de Entorno WSL},
+ pdftitle={Taller de Configuración de Entorno WSL},
  pdfkeywords={},
  pdfsubject={},
  pdfcreator={Emacs 27.1 (Org mode 9.7.5)}, 
@@ -38,15 +38,15 @@ ESCUELA POLITECNICA NACIONAL\\FACULTAD DE INGENIERIA DE SISTEMAS\\
 ARQUITECTURA DE COMPUTADORES}
 \thispagestyle{fancy}
 \section{Objetivos}
-\label{sec:org539db60}
+\label{sec:org49126df}
 
 \begin{itemize}
 \item Configurar y validar el entorno de trabajo para la asignatura de Arquitectura de Computadores en Linux o WSL.
-\item Verificar la instalacion de herramientas base: mamba/anaconda (Python), Emacs y \LaTeX.
-\item Documentar evidencias tecnicas mediante capturas y comandos ejecutados.
+\item Verificar la instalación de herramientas base: mamba/anaconda (Python), Emacs y \LaTeX.
+\item Documentar evidencias técnicas mediante capturas y comandos ejecutados.
 \end{itemize}
 \section{Instrucciones}
-\label{sec:org3767397}
+\label{sec:org9bde019}
 
 \begin{enumerate}
 \item Realice todas las actividades en Linux o en WSL.
@@ -58,7 +58,7 @@ de trabajo. Los grupos para este trabajo están en \href{https://epnecuador.shar
 identificado con nombre e email el aporte del estudiante.
 \end{enumerate}
 
-Si require insertar una imagen, crear una carpeta \texttt{images} y colocar
+Si requiere insertar una imagen, crear una carpeta \texttt{images} y colocar
 la imagen dentro. Para llamar la imagen desde Emacs use \texttt{C-c C-l} y
 busque el archivo o escriba:Puede insertar una imagen con la sintaxis:
 
@@ -66,75 +66,127 @@ busque el archivo o escriba:Puede insertar una imagen con la sintaxis:
 [[./images/image1.jpg]]
 \end{verbatim}
 \section{Actividades}
-\label{sec:orgb1adef7}
+\label{sec:org86c1a4e}
 \subsection{Configuración de WSL con Ubuntu, \LaTeX, Python e Emacs}
-\label{sec:org05bbcd3}
+\label{sec:org2a3aaca}
 
 \begin{enumerate}
-\item Verificacion de entorno mamba/anaconda
+\item Verificación de entorno mamba/anaconda
 \begin{enumerate}
 \item Active WSL (si aplica) y su entorno de trabajo.
 \item Ejecute \texttt{mamba info} con \texttt{C-c C-c} dentro del bloque de código.
 \item Si el comando falla, active un entorno con \texttt{mamba activate iccd332} e intente de nuevo.
 \end{enumerate}
-
+\end{enumerate}
+\subsubsection{Estudiante A:}
+\label{sec:orgd6a9dfe}
 \begin{verbatim}
-     mamba info
+  mamba info
 \end{verbatim}
-
+\subsubsection{Estudiante B: Auz Montezuma Juan Diego}
+\label{sec:org8e9f976}
+\begin{verbatim}
+  mamba info
+\end{verbatim}
 \phantomsection
-\label{orgaac4acb}
+\label{org93962f6}
 \begin{verbatim}
 
-	  libmamba version : 2.5.0
-	     mamba version : 2.5.0
-	      curl version : libcurl/8.19.0 OpenSSL/3.6.1 zlib/1.3.2 zstd/1.5.7 libssh2/1.11.1 nghttp2/1.68.1 mit-krb5/1.22.2
-	libarchive version : libarchive 3.8.6 zlib/1.3.2 liblzma/5.8.2 bz2lib/1.0.8 liblz4/1.10.0 libzstd/1.5.7 liblzo2/2.10 openssl/3.5.5 libb2/bundled
-	  envs directories : /home/juand/miniforge3/envs
-	     package cache : /home/juand/miniforge3/pkgs
-			     /home/juand/.mamba/pkgs
-	       environment : iccd332 (active)
-	      env location : /home/juand/miniforge3/envs/iccd332
-	 user config files : /home/juand/.mambarc
-    populated config files : /home/juand/miniforge3/.condarc
-	  virtual packages : __unix=0=0
-			     __linux=6.18.2=0
-			     __glibc=2.42=0
-			     __archspec=1=x86_64_v3
-		  channels : https://conda.anaconda.org/conda-forge/linux-64
-			     https://conda.anaconda.org/conda-forge/noarch
-	  base environment : /home/juand/miniforge3
-		  platform : linux-64
+       libmamba version : 2.5.0
+          mamba version : 2.5.0
+           curl version : libcurl/8.19.0 OpenSSL/3.6.1 zlib/1.3.2 zstd/1.5.7 libssh2/1.11.1 nghttp2/1.68.1 mit-krb5/1.22.2
+     libarchive version : libarchive 3.8.6 zlib/1.3.2 liblzma/5.8.2 bz2lib/1.0.8 liblz4/1.10.0 libzstd/1.5.7 liblzo2/2.10 openssl/3.5.5 libb2/bundled
+       envs directories : /home/juand/miniforge3/envs
+          package cache : /home/juand/miniforge3/pkgs
+                          /home/juand/.mamba/pkgs
+            environment : iccd332 (active)
+           env location : /home/juand/miniforge3/envs/iccd332
+      user config files : /home/juand/.mambarc
+ populated config files : /home/juand/miniforge3/.condarc
+       virtual packages : __unix=0=0
+                          __linux=6.18.2=0
+                          __glibc=2.42=0
+                          __archspec=1=x86_64_v3
+               channels : https://conda.anaconda.org/conda-forge/linux-64
+                          https://conda.anaconda.org/conda-forge/noarch
+       base environment : /home/juand/miniforge3
+               platform : linux-64
 \end{verbatim}
-\end{enumerate}
+\subsubsection{Estudiante C:}
+\label{sec:orgeb0d45c}
+\begin{verbatim}
+  mamba info
+\end{verbatim}
+\subsubsection{Estudiante D:}
+\label{sec:orgec11850}
+\begin{verbatim}
+  mamba info
+\end{verbatim}
+\phantomsection
+\label{org9afae06}
+\begin{verbatim}
 
-
-\begin{enumerate}
-\item Verificacion de Python
-\begin{enumerate}
-\item Active el entorno \texttt{iccd332} para abrir Emacs con \texttt{mamba activate iccd332}.
-\item Ejecute \texttt{python -{}-{}version} en la consola y desde Emacs.
-\end{enumerate}
-
+       libmamba version : 2.5.0
+          mamba version : 2.5.0
+           curl version : libcurl/8.19.0 OpenSSL/3.6.1 zlib/1.3.2 zstd/1.5.7 libssh2/1.11.1 nghttp2/1.68.1 mit-krb5/1.22.2
+     libarchive version : libarchive 3.8.6 zlib/1.3.2 liblzma/5.8.2 bz2lib/1.0.8 liblz4/1.10.0 libzstd/1.5.7 liblzo2/2.10 openssl/3.5.5 libb2/bundled
+       envs directories : /home/ani_quillu/miniforge3/envs
+          package cache : /home/ani_quillu/miniforge3/pkgs
+                          /home/ani_quillu/.mamba/pkgs
+            environment : iccd332 (active)
+           env location : /home/ani_quillu/miniforge3/envs/iccd332
+      user config files : /home/ani_quillu/.mambarc
+ populated config files : /home/ani_quillu/miniforge3/.condarc
+       virtual packages : __unix=0=0
+                          __linux=6.6.87=0
+                          __glibc=2.39=0
+                          __archspec=1=x86_64_v4
+               channels : https://conda.anaconda.org/conda-forge/linux-64
+                          https://conda.anaconda.org/conda-forge/noarch
+       base environment : /home/ani_quillu/miniforge3
+               platform : linux-64
+\end{verbatim}
+\subsubsection{Estudiante A:}
+\label{sec:orgcbb84b9}
 \begin{verbatim}
     python --version
 \end{verbatim}
-
+\subsubsection{Estudiante B:}
+\label{sec:org88e471d}
+\begin{verbatim}
+    python --version
+\end{verbatim}
 \phantomsection
-\label{org328490e}
+\label{org535bfb2}
 \begin{verbatim}
 Python 3.11.15
 \end{verbatim}
-
+\subsubsection{Estudiante C:}
+\label{sec:orgaaa833b}
+\begin{verbatim}
+    python --version
+\end{verbatim}
+\subsubsection{Estudiante D:}
+\label{sec:org6be2af2}
+\begin{verbatim}
+    python --version
+\end{verbatim}
+\begin{enumerate}
 \item Verificacion de Emacs
 Ejecute \texttt{emacs -{}-{}version} en la consola y desde Emacs.
-
+\end{enumerate}
+\subsubsection{Estudiante A:}
+\label{sec:org2875df0}
 \begin{verbatim}
    emacs --version
 \end{verbatim}
-
+\subsubsection{Estudiante B: Auz Montezuma Juan Diego}
+\label{sec:org19deb88}
+\begin{verbatim}
+   emacs --version
+\end{verbatim}
 \phantomsection
-\label{org83321e4}
+\label{org3f6811c}
 \begin{verbatim}
 GNU Emacs 30.2
 Copyright (C) 2025 Free Software Foundation, Inc.
@@ -143,19 +195,32 @@ You may redistribute copies of GNU Emacs
 under the terms of the GNU General Public License.
 For more information about these matters, see the file named COPYING.
 \end{verbatim}
-\end{enumerate}
-
-
+\subsubsection{Estudiante C:}
+\label{sec:org6ea76a8}
+\begin{verbatim}
+   emacs --version
+\end{verbatim}
+\subsubsection{Estudiante D:}
+\label{sec:org52acbf5}
+\begin{verbatim}
+   emacs --version
+\end{verbatim}
 \begin{enumerate}
 \item Verificacion de \LaTeX{}
 Ejecute \texttt{latex -{}-{}version} en la consola y desde Emacs.
-
+\end{enumerate}
+\subsubsection{Estudiante A:}
+\label{sec:orgfcbd958}
 \begin{verbatim}
    latex --version
 \end{verbatim}
-
+\subsubsection{Estudiante B: Auz Montezuma Juan Diego}
+\label{sec:orge08d0f8}
+\begin{verbatim}
+   latex --version
+\end{verbatim}
 \phantomsection
-\label{org0e88f44}
+\label{orgc323f91}
 \begin{verbatim}
    pdfTeX 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux)
    kpathsea version 6.4.2/dev
@@ -170,18 +235,25 @@ Ejecute \texttt{latex -{}-{}version} en la consola y desde Emacs.
    Compiled with zlib 1.3.1; using zlib 1.3.1
    Compiled with xpdf version 4.04
 \end{verbatim}
-\end{enumerate}
-
-
+\subsubsection{Estudiante C:}
+\label{sec:org3b4d9cd}
+\begin{verbatim}
+   latex --version
+\end{verbatim}
+\subsubsection{Estudiante D:}
+\label{sec:org3dd9d53}
+\begin{verbatim}
+   latex --version
+\end{verbatim}
 \begin{enumerate}
-\item Registro de problemas y solucion aplicada
+\item Registro de problemas y solución aplicada
 \end{enumerate}
 
-Complete la siguiente tabla si tuvo errores durante la configuracion:
+Complete la siguiente tabla si tuvo errores durante la configuración:
 
 \begin{center}
 \begin{tabularx}{\textwidth}{lXX}
-\textbf{Herramienta} & \textbf{Problema observado} & \textbf{Solucion aplicada}\\
+\textbf{Herramienta} & \textbf{Problema observado} & \textbf{Solución aplicada}\\
 \hline
  &  & \\
  &  & \\
@@ -189,7 +261,7 @@ Complete la siguiente tabla si tuvo errores durante la configuracion:
 \end{tabularx}
 \end{center}
 \subsection{Comandos Emacs Tutorial}
-\label{sec:org353e91a}
+\label{sec:org9113b50}
 Seguir el tutorial integrado en Emacs al respecto de la navegación y
 operaciones más frecuentes. El tutorial puede ser accedido en Español
 utilizando el comando:
@@ -289,7 +361,7 @@ generar una nueva fila escriba presione la tecla TAB
  &  &  & \\
 \end{longtable}
 \subsection{Comandos Emacs Juego}
-\label{sec:org3101390}
+\label{sec:orga883329}
 En la anterior sección usted revisó los comandos de mayor interés
 sobre la manipulación de Emacs. Es hora de poner en práctica sus
 conocimientos. Realice unas 3 visitas al juego  \href{https://chat.qwen.ai/s/deploy/t\_23ff57ef-b59a-4bd7-9b79-54679b33686d}{Emacs-Trainer} y apunte
@@ -311,11 +383,6 @@ iteración & Puntaje\\
 \begin{verbatim}
 [[./estudianteA-game.png]]
 \end{verbatim}
-
-\begin{center}
-\includegraphics[width=.9\linewidth]{./EmacsTrainerResult.png}
-\end{center}
-
 Estudiante B: Auz Montezuma Juan Diego 
 \begin{center}
 \begin{tabular}{rr}
@@ -323,18 +390,27 @@ Estudiante B: Auz Montezuma Juan Diego
 iteración & Puntaje\\
 \hline
 1 & 140\\
-2 & \\
-3 & \\
+2 & 140\\
+3 & 140\\
 \hline
 \end{tabular}
 \end{center}
-
-
+\begin{enumerate}
+\item Intento 1
+\label{sec:org02bbc9d}
 \begin{center}
 \includegraphics[width=.9\linewidth]{./images/JuanAuz-1.png}
 \end{center}
-
-
+\item Intento 2
+\label{sec:orge85a19b}
+\begin{center}
+\includegraphics[width=.9\linewidth]{./images/JuanAuz-2.png}
+\end{center}
+\item Intento 3
+\label{sec:org9c8cef4}
+\begin{center}
+\includegraphics[width=.9\linewidth]{./images/JuanAuz-3.png}
+\end{center}
 Estudiante C: 
 \begin{center}
 \begin{tabular}{rl}
@@ -368,10 +444,11 @@ iteración & Puntaje\\
 \begin{verbatim}
 [[./estudianteD-game.png]]
 \end{verbatim}
+\end{enumerate}
 \subsection{}
-\label{sec:orgb7ba866}
+\label{sec:org6a4fe15}
 \subsection{Usando Emacs para tener Ayuda sobre Emacs}
-\label{sec:orgf3ea7c4}
+\label{sec:org2896157}
 ¿Qué comandos le resultan más fáciles de usar y cuáles le son más
 extraños? Identifique 4 comandos que le sean fáciles y 4 que le
 resulten complicados. Revise qué dice la ayuda de Emacs sobre cada
@@ -384,8 +461,8 @@ Para consultar lo que hace un comando ejecute:
 ayuda. Presione las teclas del comando. Por ejemplo, \texttt{C-x C-f}
 \item Emacs abrirá un nuevo buffer con la descripción del comando.
 \item Cambie al buffer de la ayuda con \texttt{C-x o}
-\item Seleccione el primer parrafo de ayuda ubicando el cursor al inicio
-del parrafo y activando la marcación de texto con
+\item Seleccione el primer párrafo de ayuda ubicando el cursor al inicio
+del párrafo y activando la marcación de texto con
 \texttt{C-SPC}. Seleccione avanzando por palabras \texttt{M-f} o directamente
 toda la linea \texttt{C-e}
 \item Una vez seleccionado, copie el texto con \texttt{M-w}.
@@ -396,7 +473,11 @@ toda la linea \texttt{C-e}
 \textbf{\textbf{Comandos Fáciles}}
 \begin{enumerate}
 \item \textbf{\textbf{Estudiante A:}} <Poner el comando>. <Pegar lo que dice el primer párrafo de la ayuda>
-\item \textbf{\textbf{Estudiante B:}} <Poner el comando>. <Pegar lo que dice el primer párrafo de la ayuda>
+\item \textbf{\textbf{Estudiante B: Auz Montezuma Juan Diego}} \texttt{C-/}. C-/ runs the command undo (found in global-map), which is an
+\end{enumerate}
+interactive native-comp-function in ‘simple.el’. El comando deshace el
+último (o últimos) cambios que fueron realizados
+\begin{enumerate}
 \item 
 
 \item 
@@ -405,11 +486,15 @@ toda la linea \texttt{C-e}
 \textbf{\textbf{Comandos Difíciles}}
 \begin{enumerate}
 \item \textbf{\textbf{Estudiante A:}} <Poner el comando>. <Pegar lo que dice el primer párrafo de la ayuda>
-\item \textbf{\textbf{Estudiante B:}} <Poner el comando>. <Pegar lo que dice el primer párrafo de la ayuda>
+\item \textbf{\textbf{Estudiante B:Auz Montezuma Juan Diego}} \texttt{C-x b}. C-x b runs the command switch-to-buffer (found in global-map), which
+\end{enumerate}
+is an interactive native-comp-function in ‘window.el’. El comando abre
+el menú para cambiar de un buffer a otro
+\begin{enumerate}
 \item 
 \end{enumerate}
 \section{Equipo de Trabajo}
-\label{sec:org81606f5}
+\label{sec:org6010555}
 Complete la información de los integrantes de grupo e indique el líder
 de grupo.
 
@@ -418,14 +503,14 @@ de grupo.
 \hline
 Nombre & email & Rol\\
 \hline
-Alan Turing & a.turing@enigma.com & líder\\
+Auz Montezuma Juan Diego & juan.auzmontezuma@epn.edu.ec & líder\\
 Albert Einstein & a.einstein@relativo.com & colaborador\\
  &  & \\
 \hline
 \end{tabular}
 \end{center}
 \section{Verificación de Entregables [33\%]:}
-\label{sec:org6c9c862}
+\label{sec:orgf7e4a82}
 Ejecute \texttt{C-c C-c} sobre los ítems de tarea según se hayan cumplido o
 no. Si un ítem no pudo realizarse apunte en la siguiente sección las
 razones al respecto.
@@ -440,7 +525,7 @@ identificado el líder.
 \item[{$\square$}] Generación de Archivo PDF \texttt{M-x org-latex-export-to-pdf}
 \end{itemize}
 \subsection{Problemas con la Tarea:}
-\label{sec:org5a6f48b}
+\label{sec:org6f4b732}
 \begin{itemize}
 \item Tarea \(X_1\) no pudo completarse debido a
 \item Tarea \(X_2\) no pudo completarse debido a
