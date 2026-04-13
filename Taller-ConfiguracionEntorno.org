@@ -130,9 +130,8 @@ busque el archivo o escriba:Puede insertar una imagen con la sintaxis:
                platform : linux-64
 #+end_example
 
-
-*** Estudiante D:
-#+begin_src shell :exports both :results verbatim :eval no
+*** Estudiante D: Quillupangui Lozano Ana Maria
+#+begin_src shell :exports both :results verbatim
   mamba info
 #+end_src
 #+RESULTS:
@@ -175,11 +174,12 @@ busque el archivo o escriba:Puede insertar una imagen con la sintaxis:
    #+end_src
    #+RESULTS:
    : Python 3.14.4
-*** Estudiante D:
-   #+begin_src shell :exports both :results verbatim :eval no
-    python --version
+*** Estudiante D:Quillupangui Lozano Ana María
+   #+begin_src shell :exports both :results verbatim
+    python --version 
    #+end_src
    #+RESULTS:
+   : Python 3.11.15
    
 3. Verificacion de Emacs
    Ejecute ~emacs --version~ en la consola y desde Emacs.
@@ -211,11 +211,17 @@ busque el archivo o escriba:Puede insertar una imagen con la sintaxis:
    : under the terms of the GNU General Public License.
    : For more information about these matters, see the file named COPYING.
  
-*** Estudiante D:
-   #+begin_src shell :exports both :results verbatim :eval no
-   emacs --version
+*** Estudiante D: Quillpangui Lozano Ana María
+   #+begin_src shell :exports both :results verbatim
+   emacs --version 
    #+end_src
    #+RESULTS:
+   : GNU Emacs 29.3
+   : Copyright (C) 2024 Free Software Foundation, Inc.
+   : GNU Emacs comes with ABSOLUTELY NO WARRANTY.
+   : You may redistribute copies of GNU Emacs
+   : under the terms of the GNU General Public License.
+   : For more information about these matters, see the file named COPYING.
    
 4. Verificacion de LaTeX
    Ejecute ~latex --version~ en la consola y desde Emacs.
@@ -262,11 +268,25 @@ busque el archivo o escriba:Puede insertar una imagen con la sintaxis:
    Compiled with zlib 1.3; using zlib 1.3
    Compiled with xpdf version 4.04
    #+end_example
-*** Estudiante D:
-   #+begin_src shell :exports both :results verbatim :eval no
-   latex --version
+*** Estudiante D:Quillpangui Lozano Ana María
+   #+begin_src shell :exports both :results verbatim
+   latex --version 
    #+end_src
    #+RESULTS:
+   #+begin_example
+   pdfTeX 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian)
+   kpathsea version 6.3.5
+   Copyright 2023 Han The Thanh (pdfTeX) et al.
+   There is NO warranty.  Redistribution of this software is
+   covered by the terms of both the pdfTeX copyright and
+   the Lesser GNU General Public License.
+   For more information about these matters, see the file
+   named COPYING and the pdfTeX source.
+   Primary author of pdfTeX: Han The Thanh (pdfTeX) et al.
+   Compiled with libpng 1.6.43; using libpng 1.6.43
+   Compiled with zlib 1.3; using zlib 1.3
+   Compiled with xpdf version 4.04
+   #+end_example
 
 5. Registro de problemas y solución aplicada
 
@@ -319,13 +339,13 @@ generar una nueva fila escriba presione la tecla TAB
 | ~C-g~     | Cancela un comando en ejecución | ~C-k~     | Borra la linea                  |
 | ~C-l~     | Refrescar y centrar la pantalla | ~C-w~     | Corta el contenido seleccionado |
 
-<Estudiante D>
+<Estudiante D> Quillupangui Lozano Ana María
 #+ATTR_LATEX: :environment longtable :align |p{0.2\linewidth}|p{0.3\linewidth}|p{0.2\linewidth}|p{0.3\linewidth}|
-| *Comando*         | *Descripción*               | *Comando* | *Descripción*                     |
-|-------------------+-----------------------------+-----------+-----------------------------------|
-| ~C-c C-e # latex~ | Insertar template de  latex | ~C-x C-s~ | Guardar los cambios en el archivo |
-|                   |                             |           |                                   |
-|                   |                             |           |                                   |
+| *Comando*         | *Descripción*                        | *Comando* | *Descripción*                     |
+|-------------------+--------------------------------------+-----------+-----------------------------------|
+| ~C-x C-c~         |Cerrar Sesión                         | ~C-c C-c~ | Ejecutar acción                   |
+| ~M-a / M-e~       |Moverse al final/inicio de la oración | ~C-x 2~   | Dividir Horizontalmente           |
+| ~C-x 1~           |Dejar la ventana principal            | ~C-h ?~   |Ayuda general                      |
 ** Comandos Emacs Juego
 En la anterior sección usted revisó los comandos de mayor interés
 sobre la manipulación de Emacs. Es hora de poner en práctica sus
@@ -377,18 +397,22 @@ Estudiante C: Henry Luisa
 [[./estudianteC-game.png]]
 #+end_src
 
-Estudiante D: 
+Estudiante D: Quillpangui Lozano Ana María
 |-----------+---------|
 | iteración | Puntaje |
 |-----------+---------|
-|         1 |         |
-|         2 |         |
-|         3 |         |
+|         1 |64       |
+|         2 |115      |
+|         3 |126      |
 |-----------+---------|
+**** Intento 1
+[[./images/AnaQuillupangui-1.png]]
 
-#+begin_src org
-[[./estudianteD-game.png]]
-#+end_src
+**** Intento 2
+[[./images/AnaQuillupangui-2.png]]
+**** Intento 3
+[[./images/AnaQuillupangui-3.png]]
+
 ** 
 ** Usando Emacs para tener Ayuda sobre Emacs
 ¿Qué comandos le resultan más fáciles de usar y cuáles le son más
@@ -418,7 +442,9 @@ interactive native-comp-function in ‘simple.el’. El comando deshace el
 3. **Estudiante C: Henry Luisa** ~C-v~C-v runs the command
 scroll-up-command (found in global-map), which is an interactive
 native-compiled Lisp function in ‘window.el’.   
-4. 
+4. **Estudiante D: Quillupangui Lozano Ana María** ~C-x C-f~ <C-x C-f runs the command find-file (found in global-map), which is an
+interactive native-compiled Lisp function in ‘files.el’.>El comando
+permite abrir o crear un nuevo documento
 
 **Comandos Difíciles**
 1. **Estudiante A:** <Poner el comando>. <Pegar lo que dice el primer párrafo de la ayuda>
@@ -428,18 +454,21 @@ el menú para cambiar de un buffer a otro
 3. **Estudiante C: Henry Luisa** ~C-c C-l~ C-x C-l runs the command
    downcase-region (found in global-map), which is an interactive
    built-in function in ‘C source code’.
+4. **Estudiante D:Quillupangui Lozano Ana María** ~C-s~. <C-s runs the command isearch-forward (found in global-map), which is
+an interactive native-compiled Lisp function in ‘isearch.el’.>Permite
+buscar texto en el archivo 
 
 * Equipo de Trabajo
 Complete la información de los integrantes de grupo e indique el líder
 de grupo.
 
-|---------------------------+------------------------------+-------------|
-| Nombre                    | email                        | Rol         |
-|---------------------------+------------------------------+-------------|
-| Auz Montezuma Juan Diego  | juan.auzmontezuma@epn.edu.ec | líder       |
-| Luisa Calapiña Henry Paul | henry.luisa@epn.edu.ec       | colaborador |
-|                           |                              |             |
-|---------------------------+------------------------------+-------------|
+|------------------------------+---------------------------------+-------------|
+| Nombre                       | email                           | Rol         |
+|------------------------------+---------------------------------+-------------|
+| Auz Montezuma Juan Diego     | juan.auzmontezuma@epn.edu.ec    | líder       |
+| Luisa Calapiña Henry Paul    | henry.luisa@epn.edu.ec          | colaborador |
+| Quillpangui Lozano Ana María | anamaria.quillpangui@epn.edu.ec | colaborador |
+|------------------------------+---------------------------------+-------------|
 
 * Verificación de Entregables [33%]:
 Ejecute ~C-c C-c~ sobre los ítems de tarea según se hayan cumplido o
