@@ -1,4 +1,4 @@
-% Created 2026-04-12 dom 22:00
+% Created 2026-04-16 Thu 23:40
 % Intended LaTeX compiler: pdflatex
 \documentclass{article}
 \usepackage[utf8]{inputenc}
@@ -37,16 +37,18 @@
 ESCUELA POLITECNICA NACIONAL\\FACULTAD DE INGENIERIA DE SISTEMAS\\
 ARQUITECTURA DE COMPUTADORES}
 \thispagestyle{fancy}
+
 \section{Objetivos}
-\label{sec:org49126df}
+\label{sec:orgaf14a44}
 
 \begin{itemize}
 \item Configurar y validar el entorno de trabajo para la asignatura de Arquitectura de Computadores en Linux o WSL.
 \item Verificar la instalación de herramientas base: mamba/anaconda (Python), Emacs y \LaTeX.
 \item Documentar evidencias técnicas mediante capturas y comandos ejecutados.
 \end{itemize}
+
 \section{Instrucciones}
-\label{sec:org9bde019}
+\label{sec:orgfb1f43d}
 
 \begin{enumerate}
 \item Realice todas las actividades en Linux o en WSL.
@@ -66,9 +68,9 @@ busque el archivo o escriba:Puede insertar una imagen con la sintaxis:
 [[./images/image1.jpg]]
 \end{verbatim}
 \section{Actividades}
-\label{sec:org86c1a4e}
+\label{sec:org48f14ec}
 \subsection{Configuración de WSL con Ubuntu, \LaTeX, Python e Emacs}
-\label{sec:org2a3aaca}
+\label{sec:orge2d1c62}
 
 \begin{enumerate}
 \item Verificación de entorno mamba/anaconda
@@ -78,18 +80,38 @@ busque el archivo o escriba:Puede insertar una imagen con la sintaxis:
 \item Si el comando falla, active un entorno con \texttt{mamba activate iccd332} e intente de nuevo.
 \end{enumerate}
 \end{enumerate}
-\subsubsection{Estudiante A:}
-\label{sec:orgd6a9dfe}
+\subsubsection{Estudiante A: Alban Salazar Emilio Fabian}
+\label{sec:org5696e2e}
 \begin{verbatim}
   mamba info
+\end{verbatim}
+\begin{verbatim}
+
+       libmamba version : 2.5.0
+          mamba version : 2.5.0
+           curl version : libcurl/8.19.0 OpenSSL/3.6.1 zlib/1.3.2 zstd/1.5.7 libssh2/1.11.1 nghttp2/1.68.1 mit-krb5/1.22.2
+     libarchive version : libarchive 3.8.6 zlib/1.3.2 liblzma/5.8.2 bz2lib/1.0.8 liblz4/1.10.0 libzstd/1.5.7 liblzo2/2.10 openssl/3.5.5 libb2/bundled
+       envs directories : /home/emilioalbanfs/miniforge3/envs
+          package cache : /home/emilioalbanfs/miniforge3/pkgs
+                          /home/emilioalbanfs/.mamba/pkgs
+            environment : iccd332 (active)
+           env location : /home/emilioalbanfs/miniforge3/envs/iccd332
+      user config files : /home/emilioalbanfs/.mambarc
+ populated config files : /home/emilioalbanfs/miniforge3/.condarc
+       virtual packages : __unix=0=0
+                          __linux=6.6.87=0
+                          __glibc=2.39=0
+                          __archspec=1=x86_64_v3
+               channels : https://conda.anaconda.org/conda-forge/linux-64
+                          https://conda.anaconda.org/conda-forge/noarch
+       base environment : /home/emilioalbanfs/miniforge3
+               platform : linux-64
 \end{verbatim}
 \subsubsection{Estudiante B: Auz Montezuma Juan Diego}
-\label{sec:org8e9f976}
+\label{sec:org98cc879}
 \begin{verbatim}
   mamba info
 \end{verbatim}
-\phantomsection
-\label{org93962f6}
 \begin{verbatim}
 
        libmamba version : 2.5.0
@@ -112,81 +134,117 @@ busque el archivo o escriba:Puede insertar una imagen con la sintaxis:
        base environment : /home/juand/miniforge3
                platform : linux-64
 \end{verbatim}
-\subsubsection{Estudiante C:}
-\label{sec:orgeb0d45c}
+\subsubsection{Estudiante C: Henry Luisa}
+\label{sec:org33c280f}
 \begin{verbatim}
   mamba info
 \end{verbatim}
-\subsubsection{Estudiante D:}
-\label{sec:orgec11850}
-\begin{verbatim}
-  mamba info
-\end{verbatim}
-\phantomsection
-\label{org9afae06}
 \begin{verbatim}
 
        libmamba version : 2.5.0
           mamba version : 2.5.0
            curl version : libcurl/8.19.0 OpenSSL/3.6.1 zlib/1.3.2 zstd/1.5.7 libssh2/1.11.1 nghttp2/1.68.1 mit-krb5/1.22.2
      libarchive version : libarchive 3.8.6 zlib/1.3.2 liblzma/5.8.2 bz2lib/1.0.8 liblz4/1.10.0 libzstd/1.5.7 liblzo2/2.10 openssl/3.5.5 libb2/bundled
-       envs directories : /home/ani_quillu/miniforge3/envs
-          package cache : /home/ani_quillu/miniforge3/pkgs
-                          /home/ani_quillu/.mamba/pkgs
+       envs directories : /home/emilioalbanfs/miniforge3/envs
+          package cache : /home/emilioalbanfs/miniforge3/pkgs
+                          /home/emilioalbanfs/.mamba/pkgs
             environment : iccd332 (active)
-           env location : /home/ani_quillu/miniforge3/envs/iccd332
-      user config files : /home/ani_quillu/.mambarc
- populated config files : /home/ani_quillu/miniforge3/.condarc
+           env location : /home/emilioalbanfs/miniforge3/envs/iccd332
+      user config files : /home/emilioalbanfs/.mambarc
+ populated config files : /home/emilioalbanfs/miniforge3/.condarc
        virtual packages : __unix=0=0
                           __linux=6.6.87=0
                           __glibc=2.39=0
-                          __archspec=1=x86_64_v4
+                          __archspec=1=x86_64_v3
                channels : https://conda.anaconda.org/conda-forge/linux-64
                           https://conda.anaconda.org/conda-forge/noarch
-       base environment : /home/ani_quillu/miniforge3
+       base environment : /home/emilioalbanfs/miniforge3
                platform : linux-64
 \end{verbatim}
-\subsubsection{Estudiante A:}
-\label{sec:orgcbb84b9}
+
+\subsubsection{Estudiante D: Quillupangui Lozano Ana Maria}
+\label{sec:org8d7c12d}
+\begin{verbatim}
+  mamba info
+\end{verbatim}
+\begin{verbatim}
+
+       libmamba version : 2.5.0
+          mamba version : 2.5.0
+           curl version : libcurl/8.19.0 OpenSSL/3.6.1 zlib/1.3.2 zstd/1.5.7 libssh2/1.11.1 nghttp2/1.68.1 mit-krb5/1.22.2
+     libarchive version : libarchive 3.8.6 zlib/1.3.2 liblzma/5.8.2 bz2lib/1.0.8 liblz4/1.10.0 libzstd/1.5.7 liblzo2/2.10 openssl/3.5.5 libb2/bundled
+       envs directories : /home/emilioalbanfs/miniforge3/envs
+          package cache : /home/emilioalbanfs/miniforge3/pkgs
+                          /home/emilioalbanfs/.mamba/pkgs
+            environment : iccd332 (active)
+           env location : /home/emilioalbanfs/miniforge3/envs/iccd332
+      user config files : /home/emilioalbanfs/.mambarc
+ populated config files : /home/emilioalbanfs/miniforge3/.condarc
+       virtual packages : __unix=0=0
+                          __linux=6.6.87=0
+                          __glibc=2.39=0
+                          __archspec=1=x86_64_v3
+               channels : https://conda.anaconda.org/conda-forge/linux-64
+                          https://conda.anaconda.org/conda-forge/noarch
+       base environment : /home/emilioalbanfs/miniforge3
+               platform : linux-64
+\end{verbatim}
+\subsubsection{Estudiante A: Alban Salazar Emilio Fabian}
+\label{sec:org6a1a053}
 \begin{verbatim}
     python --version
 \end{verbatim}
-\subsubsection{Estudiante B:}
-\label{sec:org88e471d}
+\begin{verbatim}
+Python 3.14.4
+\end{verbatim}
+\subsubsection{Estudiante B: Auz Montezuma Juan Diego}
+\label{sec:orgd1c3189}
 \begin{verbatim}
     python --version
 \end{verbatim}
-\phantomsection
-\label{org535bfb2}
 \begin{verbatim}
 Python 3.11.15
 \end{verbatim}
-\subsubsection{Estudiante C:}
-\label{sec:orgaaa833b}
+\subsubsection{Estudiante C: Henry Luisa}
+\label{sec:orgad46ddb}
 \begin{verbatim}
     python --version
 \end{verbatim}
-\subsubsection{Estudiante D:}
-\label{sec:org6be2af2}
 \begin{verbatim}
-    python --version
+Python 3.14.4
 \end{verbatim}
+\subsubsection{Estudiante D:Quillupangui Lozano Ana María}
+\label{sec:org273345d}
+\begin{verbatim}
+    python --version 
+\end{verbatim}
+\begin{verbatim}
+Python 3.14.4
+\end{verbatim}
+
+
 \begin{enumerate}
 \item Verificacion de Emacs
 Ejecute \texttt{emacs -{}-{}version} en la consola y desde Emacs.
 \end{enumerate}
-\subsubsection{Estudiante A:}
-\label{sec:org2875df0}
+\subsubsection{Estudiante A: Alban Salazar Emilio Fabian}
+\label{sec:orgd8cb058}
 \begin{verbatim}
    emacs --version
+\end{verbatim}
+\begin{verbatim}
+GNU Emacs 29.3
+Copyright (C) 2024 Free Software Foundation, Inc.
+GNU Emacs comes with ABSOLUTELY NO WARRANTY.
+You may redistribute copies of GNU Emacs
+under the terms of the GNU General Public License.
+For more information about these matters, see the file named COPYING.
 \end{verbatim}
 \subsubsection{Estudiante B: Auz Montezuma Juan Diego}
-\label{sec:org19deb88}
+\label{sec:org9dbfdac}
 \begin{verbatim}
    emacs --version
 \end{verbatim}
-\phantomsection
-\label{org3f6811c}
 \begin{verbatim}
 GNU Emacs 30.2
 Copyright (C) 2025 Free Software Foundation, Inc.
@@ -195,32 +253,63 @@ You may redistribute copies of GNU Emacs
 under the terms of the GNU General Public License.
 For more information about these matters, see the file named COPYING.
 \end{verbatim}
-\subsubsection{Estudiante C:}
-\label{sec:org6ea76a8}
+\subsubsection{Estudiante C: Henry Luisa}
+\label{sec:org5ffeafd}
 \begin{verbatim}
    emacs --version
 \end{verbatim}
-\subsubsection{Estudiante D:}
-\label{sec:org52acbf5}
 \begin{verbatim}
-   emacs --version
+GNU Emacs 29.3
+Copyright (C) 2024 Free Software Foundation, Inc.
+GNU Emacs comes with ABSOLUTELY NO WARRANTY.
+You may redistribute copies of GNU Emacs
+under the terms of the GNU General Public License.
+For more information about these matters, see the file named COPYING.
 \end{verbatim}
+
+\subsubsection{Estudiante D: Quillpangui Lozano Ana María}
+\label{sec:org365b063}
+\begin{verbatim}
+   emacs --version 
+\end{verbatim}
+\begin{verbatim}
+GNU Emacs 29.3
+Copyright (C) 2024 Free Software Foundation, Inc.
+GNU Emacs comes with ABSOLUTELY NO WARRANTY.
+You may redistribute copies of GNU Emacs
+under the terms of the GNU General Public License.
+For more information about these matters, see the file named COPYING.
+\end{verbatim}
+
+
 \begin{enumerate}
 \item Verificacion de \LaTeX{}
 Ejecute \texttt{latex -{}-{}version} en la consola y desde Emacs.
 \end{enumerate}
-\subsubsection{Estudiante A:}
-\label{sec:orgfcbd958}
+\subsubsection{Estudiante A: Alban Salazar Emilio Fabian}
+\label{sec:orgdab2276}
 \begin{verbatim}
    latex --version
+\end{verbatim}
+\begin{verbatim}
+   pdfTeX 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian)
+   kpathsea version 6.3.5
+   Copyright 2023 Han The Thanh (pdfTeX) et al.
+   There is NO warranty.  Redistribution of this software is
+   covered by the terms of both the pdfTeX copyright and
+   the Lesser GNU General Public License.
+   For more information about these matters, see the file
+   named COPYING and the pdfTeX source.
+   Primary author of pdfTeX: Han The Thanh (pdfTeX) et al.
+   Compiled with libpng 1.6.43; using libpng 1.6.43
+   Compiled with zlib 1.3; using zlib 1.3
+   Compiled with xpdf version 4.04
 \end{verbatim}
 \subsubsection{Estudiante B: Auz Montezuma Juan Diego}
-\label{sec:orge08d0f8}
+\label{sec:org957dace}
 \begin{verbatim}
    latex --version
 \end{verbatim}
-\phantomsection
-\label{orgc323f91}
 \begin{verbatim}
    pdfTeX 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux)
    kpathsea version 6.4.2/dev
@@ -235,16 +324,45 @@ Ejecute \texttt{latex -{}-{}version} en la consola y desde Emacs.
    Compiled with zlib 1.3.1; using zlib 1.3.1
    Compiled with xpdf version 4.04
 \end{verbatim}
-\subsubsection{Estudiante C:}
-\label{sec:org3b4d9cd}
+\subsubsection{Estudiante C: Henry Luisa}
+\label{sec:org76c5a58}
 \begin{verbatim}
    latex --version
 \end{verbatim}
-\subsubsection{Estudiante D:}
-\label{sec:org3dd9d53}
 \begin{verbatim}
-   latex --version
+   pdfTeX 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian)
+   kpathsea version 6.3.5
+   Copyright 2023 Han The Thanh (pdfTeX) et al.
+   There is NO warranty.  Redistribution of this software is
+   covered by the terms of both the pdfTeX copyright and
+   the Lesser GNU General Public License.
+   For more information about these matters, see the file
+   named COPYING and the pdfTeX source.
+   Primary author of pdfTeX: Han The Thanh (pdfTeX) et al.
+   Compiled with libpng 1.6.43; using libpng 1.6.43
+   Compiled with zlib 1.3; using zlib 1.3
+   Compiled with xpdf version 4.04
 \end{verbatim}
+\subsubsection{Estudiante D:Quillpangui Lozano Ana María}
+\label{sec:org7ac358c}
+\begin{verbatim}
+   latex --version 
+\end{verbatim}
+\begin{verbatim}
+   pdfTeX 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian)
+   kpathsea version 6.3.5
+   Copyright 2023 Han The Thanh (pdfTeX) et al.
+   There is NO warranty.  Redistribution of this software is
+   covered by the terms of both the pdfTeX copyright and
+   the Lesser GNU General Public License.
+   For more information about these matters, see the file
+   named COPYING and the pdfTeX source.
+   Primary author of pdfTeX: Han The Thanh (pdfTeX) et al.
+   Compiled with libpng 1.6.43; using libpng 1.6.43
+   Compiled with zlib 1.3; using zlib 1.3
+   Compiled with xpdf version 4.04
+\end{verbatim}
+
 \begin{enumerate}
 \item Registro de problemas y solución aplicada
 \end{enumerate}
@@ -253,15 +371,16 @@ Complete la siguiente tabla si tuvo errores durante la configuración:
 
 \begin{center}
 \begin{tabularx}{\textwidth}{lXX}
-\textbf{Herramienta} & \textbf{Problema observado} & \textbf{Solución aplicada}\\
+\textbf{Herramienta} & \textbf{Problema observado} & \textbf{Solución aplicada}\\[0pt]
 \hline
- &  & \\
- &  & \\
- &  & \\
+ &  & \\[0pt]
+ &  & \\[0pt]
+ &  & \\[0pt]
 \end{tabularx}
 \end{center}
+
 \subsection{Comandos Emacs Tutorial}
-\label{sec:org9113b50}
+\label{sec:org5a71b1c}
 Seguir el tutorial integrado en Emacs al respecto de la navegación y
 operaciones más frecuentes. El tutorial puede ser accedido en Español
 utilizando el comando:
@@ -277,15 +396,15 @@ tabla. Dentro de la región de la tabla puede dar C-c C-c para alinear
 automáticamente la tabla al contenido del texto que escriba. Para
 generar una nueva fila escriba presione la tecla TAB
 
-<Estudiante A>
+<Estudiante A> Alban Salazar Emilio Fabian
 \begin{longtable}{|p{0.2\linewidth}|p{0.3\linewidth}|p{0.2\linewidth}|p{0.3\linewidth}|}
-\textbf{Comando} & \textbf{Descripción} & \textbf{Comando} & \textbf{Descripción}\\
+\textbf{Comando} & \textbf{Descripción} & \textbf{Comando} & \textbf{Descripción}\\[0pt]
 \hline
 \endfirsthead
-\multicolumn{4}{l}{Continued from previous page} \\
+\multicolumn{4}{l}{Continued from previous page} \\[0pt]
 \hline
 
-\textbf{Comando} & \textbf{Descripción} & \textbf{Comando} & \textbf{Descripción} \\
+\textbf{Comando} & \textbf{Descripción} & \textbf{Comando} & \textbf{Descripción} \\[0pt]
 
 \hline
 \endhead
@@ -293,20 +412,20 @@ generar una nueva fila escriba presione la tecla TAB
 \endfoot
 \endlastfoot
 \hline
-\texttt{C-c C-e \# latex} & Insertar template de  latex & \texttt{C-x C-s} & Guardar los cambios en el archivo\\
- &  &  & \\
- &  &  & \\
+\texttt{C-g} & Cancelar un comando parcialmente introducido & \texttt{M-b / M-f} & Moverse atrás/adelante de una palabra\\[0pt]
+\texttt{C-k} & Elimina desde el cursor hasta el fin de la línea & \texttt{M-w} & Copiar un segmento de texto\\[0pt]
+\texttt{C-<SPC>} & Resaltar un texto entre el cursos y la posición en la que se tecleó & \texttt{C-/} & Para deshacer cambios\\[0pt]
 \end{longtable}
 
 <Estudiante B> Auz Montezuma Juan Diego
 \begin{longtable}{|p{0.2\linewidth}|p{0.3\linewidth}|p{0.2\linewidth}|p{0.3\linewidth}|}
-\textbf{Comando} & \textbf{Descripción} & \textbf{Comando} & \textbf{Descripción}\\
+\textbf{Comando} & \textbf{Descripción} & \textbf{Comando} & \textbf{Descripción}\\[0pt]
 \hline
 \endfirsthead
-\multicolumn{4}{l}{Continued from previous page} \\
+\multicolumn{4}{l}{Continued from previous page} \\[0pt]
 \hline
 
-\textbf{Comando} & \textbf{Descripción} & \textbf{Comando} & \textbf{Descripción} \\
+\textbf{Comando} & \textbf{Descripción} & \textbf{Comando} & \textbf{Descripción} \\[0pt]
 
 \hline
 \endhead
@@ -314,20 +433,20 @@ generar una nueva fila escriba presione la tecla TAB
 \endfoot
 \endlastfoot
 \hline
-\texttt{C-x C-f} & Abrir/Guardar archivos & \texttt{C-x 1} & Centrar la pantalla en un solo buffer\\
-\texttt{C-a / C-e} & Moverse al inicio o final de la oración & \texttt{C-space M-w} & Copiar el texto seleccionado\\
-\texttt{C-y} & Pegar & \texttt{C-/ o C-x u} & Revertir cambios\\
+\texttt{C-x C-f} & Abrir/Guardar archivos & \texttt{C-x 1} & Centrar la pantalla en un solo buffer\\[0pt]
+\texttt{C-a / C-e} & Moverse al inicio o final de la oración & \texttt{C-space M-w} & Copiar el texto seleccionado\\[0pt]
+\texttt{C-y} & Pegar & \texttt{C-/ o C-x u} & Revertir cambios\\[0pt]
 \end{longtable}
 
-<Estudiante C>
+<Estudiante C> Henry Luisa
 \begin{longtable}{|p{0.2\linewidth}|p{0.3\linewidth}|p{0.2\linewidth}|p{0.3\linewidth}|}
-\textbf{Comando} & \textbf{Descripción} & \textbf{Comando} & \textbf{Descripción}\\
+\textbf{Comando} & \textbf{Descripción} & \textbf{Comando} & \textbf{Descripción}\\[0pt]
 \hline
 \endfirsthead
-\multicolumn{4}{l}{Continued from previous page} \\
+\multicolumn{4}{l}{Continued from previous page} \\[0pt]
 \hline
 
-\textbf{Comando} & \textbf{Descripción} & \textbf{Comando} & \textbf{Descripción} \\
+\textbf{Comando} & \textbf{Descripción} & \textbf{Comando} & \textbf{Descripción} \\[0pt]
 
 \hline
 \endhead
@@ -335,20 +454,20 @@ generar una nueva fila escriba presione la tecla TAB
 \endfoot
 \endlastfoot
 \hline
-\texttt{C-c C-e \# latex} & Insertar template de  latex & \texttt{C-x C-s} & Guardar los cambios en el archivo\\
- &  &  & \\
- &  &  & \\
+\texttt{C-x b} & Cambiar entre buffers & \texttt{M-v} & Desplazarse hacia arriba\\[0pt]
+\texttt{C-g} & Cancela un comando en ejecución & \texttt{C-k} & Borra la linea\\[0pt]
+\texttt{C-l} & Refrescar y centrar la pantalla & \texttt{C-w} & Corta el contenido seleccionado\\[0pt]
 \end{longtable}
 
-<Estudiante D>
+<Estudiante D> Quillupangui Lozano Ana María
 \begin{longtable}{|p{0.2\linewidth}|p{0.3\linewidth}|p{0.2\linewidth}|p{0.3\linewidth}|}
-\textbf{Comando} & \textbf{Descripción} & \textbf{Comando} & \textbf{Descripción}\\
+\textbf{Comando} & \textbf{Descripción} & \textbf{Comando} & \textbf{Descripción}\\[0pt]
 \hline
 \endfirsthead
-\multicolumn{4}{l}{Continued from previous page} \\
+\multicolumn{4}{l}{Continued from previous page} \\[0pt]
 \hline
 
-\textbf{Comando} & \textbf{Descripción} & \textbf{Comando} & \textbf{Descripción} \\
+\textbf{Comando} & \textbf{Descripción} & \textbf{Comando} & \textbf{Descripción} \\[0pt]
 
 \hline
 \endhead
@@ -356,99 +475,140 @@ generar una nueva fila escriba presione la tecla TAB
 \endfoot
 \endlastfoot
 \hline
-\texttt{C-c C-e \# latex} & Insertar template de  latex & \texttt{C-x C-s} & Guardar los cambios en el archivo\\
- &  &  & \\
- &  &  & \\
+\texttt{C-x C-c} & Cerrar Sesión & \texttt{C-c C-c} & Ejecutar acción\\[0pt]
+\texttt{M-a / M-e} & Moverse al final/inicio de la oración & \texttt{C-x 2} & Dividir Horizontalmente\\[0pt]
+\texttt{C-x 1} & Dejar la ventana principal & \texttt{C-h ?} & Ayuda general\\[0pt]
 \end{longtable}
 \subsection{Comandos Emacs Juego}
-\label{sec:orga883329}
+\label{sec:org16b7427}
 En la anterior sección usted revisó los comandos de mayor interés
 sobre la manipulación de Emacs. Es hora de poner en práctica sus
 conocimientos. Realice unas 3 visitas al juego  \href{https://chat.qwen.ai/s/deploy/t\_23ff57ef-b59a-4bd7-9b79-54679b33686d}{Emacs-Trainer} y apunte
 en la siguiente tabla su puntaje.
 
-Estudiante A: 
+Estudiante A: Alban Salazar Emilio Fabian
 \begin{center}
-\begin{tabular}{rl}
+\begin{tabular}{rr}
 \hline
-iteración & Puntaje\\
+iteración & Puntaje\\[0pt]
 \hline
-1 & \\
-2 & \\
-3 & \\
+1 & 140\\[0pt]
+2 & 130\\[0pt]
+3 & 140\\[0pt]
 \hline
 \end{tabular}
 \end{center}
 
-\begin{verbatim}
-[[./estudianteA-game.png]]
-\end{verbatim}
+\begin{enumerate}
+\item Intento 1
+\label{sec:orge4eb5dc}
+\begin{center}
+\includegraphics[width=.9\linewidth]{./images/EmilioAlban-1.png}
+\end{center}
+\item Intento 2
+\label{sec:org60c2bde}
+\begin{center}
+\includegraphics[width=.9\linewidth]{./images/EmilioAlban-2.png}
+\end{center}
+\item Intento 3
+\label{sec:org7608441}
+\begin{center}
+\includegraphics[width=.9\linewidth]{./images/EmilioAlban-3.png}
+\end{center}
+
 Estudiante B: Auz Montezuma Juan Diego 
 \begin{center}
 \begin{tabular}{rr}
 \hline
-iteración & Puntaje\\
+iteración & Puntaje\\[0pt]
 \hline
-1 & 140\\
-2 & 140\\
-3 & 140\\
+1 & 140\\[0pt]
+2 & 140\\[0pt]
+3 & 140\\[0pt]
 \hline
 \end{tabular}
 \end{center}
-\begin{enumerate}
+
 \item Intento 1
-\label{sec:org02bbc9d}
+\label{sec:orgbcedfa4}
 \begin{center}
 \includegraphics[width=.9\linewidth]{./images/JuanAuz-1.png}
 \end{center}
 \item Intento 2
-\label{sec:orge85a19b}
+\label{sec:org2a19f8f}
 \begin{center}
 \includegraphics[width=.9\linewidth]{./images/JuanAuz-2.png}
 \end{center}
 \item Intento 3
-\label{sec:org9c8cef4}
+\label{sec:org26ad4d5}
 \begin{center}
 \includegraphics[width=.9\linewidth]{./images/JuanAuz-3.png}
 \end{center}
-Estudiante C: 
+Estudiante C: Henry Luisa 
 \begin{center}
-\begin{tabular}{rl}
+\begin{tabular}{rr}
 \hline
-iteración & Puntaje\\
+iteración & Puntaje\\[0pt]
 \hline
-1 & \\
-2 & \\
-3 & \\
+1 & 134\\[0pt]
+2 & 140\\[0pt]
+3 & 140\\[0pt]
 \hline
 \end{tabular}
 \end{center}
-
+\item Intento 1
+\label{sec:org477c1ad}
+\begin{center}
+\includegraphics[width=.9\linewidth]{images/Henry-1.jpeg}
+\end{center}
+\item Intento 2
+\label{sec:org97399f5}
+\begin{center}
+\includegraphics[width=.9\linewidth]{images/Henry-2.jpeg}
+\end{center}
+\item Intento 3
+\label{sec:org19013df}
+\begin{center}
+\includegraphics[width=.9\linewidth]{images/Henry-3.jpeg}
+\end{center}
 \begin{verbatim}
 [[./estudianteC-game.png]]
 \end{verbatim}
 
-Estudiante D: 
+Estudiante D: Quillpangui Lozano Ana María
 \begin{center}
-\begin{tabular}{rl}
+\begin{tabular}{rr}
 \hline
-iteración & Puntaje\\
+iteración & Puntaje\\[0pt]
 \hline
-1 & \\
-2 & \\
-3 & \\
+1 & 64\\[0pt]
+2 & 115\\[0pt]
+3 & 126\\[0pt]
 \hline
 \end{tabular}
 \end{center}
+\item Intento 1
+\label{sec:orgb91b6e7}
+\begin{center}
+\includegraphics[width=.9\linewidth]{./images/AnaQuillupangui-1.png}
+\end{center}
 
-\begin{verbatim}
-[[./estudianteD-game.png]]
-\end{verbatim}
+\item Intento 2
+\label{sec:org394b6ff}
+\begin{center}
+\includegraphics[width=.9\linewidth]{./images/AnaQuillupangui-2.png}
+\end{center}
+\item Intento 3
+\label{sec:org6330cc7}
+\begin{center}
+\includegraphics[width=.9\linewidth]{./images/AnaQuillupangui-3.png}
+\end{center}
 \end{enumerate}
+
 \subsection{}
-\label{sec:org6a4fe15}
+\label{sec:org56fc366}
 \subsection{Usando Emacs para tener Ayuda sobre Emacs}
-\label{sec:org2896157}
+\label{sec:orgdb215f1}
 ¿Qué comandos le resultan más fáciles de usar y cuáles le son más
 extraños? Identifique 4 comandos que le sean fáciles y 4 que le
 resulten complicados. Revise qué dice la ayuda de Emacs sobre cada
@@ -472,60 +632,83 @@ toda la linea \texttt{C-e}
 
 \textbf{\textbf{Comandos Fáciles}}
 \begin{enumerate}
-\item \textbf{\textbf{Estudiante A:}} <Poner el comando>. <Pegar lo que dice el primer párrafo de la ayuda>
+\item \textbf{\textbf{Estudiante A: Alban Salazar Emilio Fabian}} \texttt{C-<SPC>} runs the command set-mark-command (found in global-map), which
+\end{enumerate}
+is an interactive native-compiled Lisp function in ‘simple.el’. El 
+comando resalta un texto entre el cursor y la posicion en la que se tecleó
+\begin{enumerate}
 \item \textbf{\textbf{Estudiante B: Auz Montezuma Juan Diego}} \texttt{C-/}. C-/ runs the command undo (found in global-map), which is an
 \end{enumerate}
 interactive native-comp-function in ‘simple.el’. El comando deshace el
 último (o últimos) cambios que fueron realizados
 \begin{enumerate}
-\item 
-
-\item 
+\item \textbf{\textbf{Estudiante C: Henry Luisa}} \textasciitilde{}C-v\textasciitilde{}C-v runs the command
 \end{enumerate}
+scroll-up-command (found in global-map), which is an interactive
+native-compiled Lisp function in ‘window.el’.   
+\begin{enumerate}
+\item \textbf{\textbf{Estudiante D: Quillupangui Lozano Ana María}} \texttt{C-x C-f} <C-x C-f runs the command find-file (found in global-map), which is an
+\end{enumerate}
+interactive native-compiled Lisp function in ‘files.el’.>El comando
+permite abrir o crear un nuevo documento
 
 \textbf{\textbf{Comandos Difíciles}}
 \begin{enumerate}
-\item \textbf{\textbf{Estudiante A:}} <Poner el comando>. <Pegar lo que dice el primer párrafo de la ayuda>
+\item \textbf{\textbf{Estudiante A: Alban Salazar Emilio Fabian}} \texttt{C-h c} runs the command describe-key-briefly (found in global-map),
+\end{enumerate}
+which is an interactive native-compiled Lisp function in ‘help.el’. El
+comando permite presionar cualquier otra combinación de teclas para averiguar qué función o comando de Emacs está asignado a ella.
+\begin{enumerate}
 \item \textbf{\textbf{Estudiante B:Auz Montezuma Juan Diego}} \texttt{C-x b}. C-x b runs the command switch-to-buffer (found in global-map), which
 \end{enumerate}
 is an interactive native-comp-function in ‘window.el’. El comando abre
 el menú para cambiar de un buffer a otro
 \begin{enumerate}
-\item 
+\item \textbf{\textbf{Estudiante C: Henry Luisa}} \texttt{C-c C-l} C-x C-l runs the command
+downcase-region (found in global-map), which is an interactive
+built-in function in ‘C source code’.
+\item \textbf{\textbf{Estudiante D:Quillupangui Lozano Ana María}} \texttt{C-s}. <C-s runs the command isearch-forward (found in global-map), which is
 \end{enumerate}
+an interactive native-compiled Lisp function in ‘isearch.el’.>Permite
+buscar texto en el archivo 
+
 \section{Equipo de Trabajo}
-\label{sec:org6010555}
+\label{sec:orgfb5f46a}
 Complete la información de los integrantes de grupo e indique el líder
 de grupo.
 
 \begin{center}
 \begin{tabular}{lll}
 \hline
-Nombre & email & Rol\\
+Nombre & email & Rol\\[0pt]
 \hline
-Auz Montezuma Juan Diego & juan.auzmontezuma@epn.edu.ec & líder\\
-Albert Einstein & a.einstein@relativo.com & colaborador\\
- &  & \\
+Auz Montezuma Juan Diego & juan.auzmontezuma@epn.edu.ec & líder\\[0pt]
+Luisa Calapiña Henry Paul & henry.luisa@epn.edu.ec & colaborador\\[0pt]
+Quillpangui Lozano Ana María & anamaria.quillpangui@epn.edu.ec & colaborador\\[0pt]
+Alban Salazar Emilio Fabian & emilio.alban@epn.edu.ec & colaborador\\[0pt]
+ &  & \\[0pt]
 \hline
 \end{tabular}
 \end{center}
-\section{Verificación de Entregables [33\%]:}
-\label{sec:orgf7e4a82}
+
+\section{Verificación de Entregables [100\%]:}
+\label{sec:orgda56fbb}
 Ejecute \texttt{C-c C-c} sobre los ítems de tarea según se hayan cumplido o
 no. Si un ítem no pudo realizarse apunte en la siguiente sección las
 razones al respecto.
 \begin{itemize}
 \item[{$\boxtimes$}] Verificación de configuración de entorno WSL y paquetes del curso.
-\item[{$\square$}] Tutorial de Comandos Emacs realizado.
-\item[{$\square$}] Captura de Imágenes y puntajes de Emacs Trainer App.
-\item[{$\square$}] Usando Emacs para tener ayuda sobre Emacs
-\item[{$\square$}] Verifique que estén los nombres de los integrantes del equipo e
+\item[{$\boxtimes$}] Tutorial de Comandos Emacs realizado.
+\item[{$\boxtimes$}] Captura de Imágenes y puntajes de Emacs Trainer App.
+\item[{$\boxtimes$}] Usando Emacs para tener ayuda sobre Emacs
+\item[{$\boxtimes$}] Verifique que estén los nombres de los integrantes del equipo e
 identificado el líder.
-\item[{$\square$}] Revisión de ortografía con \texttt{ispell} en el buffer
-\item[{$\square$}] Generación de Archivo PDF \texttt{M-x org-latex-export-to-pdf}
+\item[{$\boxtimes$}] Revisión de ortografía con \texttt{ispell} en el buffer
+\item[{$\boxtimes$}] Generación de Archivo
+PDF \texttt{M-x org-latex-export-to-pdf}
 \end{itemize}
 \subsection{Problemas con la Tarea:}
-\label{sec:org6f4b732}
+\label{sec:orgbf6f398}
 \begin{itemize}
 \item Tarea \(X_1\) no pudo completarse debido a
 \item Tarea \(X_2\) no pudo completarse debido a
