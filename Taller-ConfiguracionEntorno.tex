@@ -1,4 +1,4 @@
-% Created 2026-04-16 Thu 23:40
+% Created 2026-04-20 Mon 17:30
 % Intended LaTeX compiler: pdflatex
 \documentclass{article}
 \usepackage[utf8]{inputenc}
@@ -20,11 +20,11 @@
 \setlength\headheight{43.0pt}
 \usepackage{tabularx}
 \usepackage{longtable}
-\author{Alban Salazar Emilio Fabian, Auz Montezuma Juan Diego , Luisa Calapiña Henry Paul, Quillupangui Lozano Ana María}
+\author{Alban Salazar Emilio Fabian, Auz Montezuma Juan Diego, Luisa Calapiña Henry Paul, Quillupangui Lozano Ana María}
 \date{2026-04-08}
 \title{Taller de Configuración de Entorno WSL}
 \hypersetup{
- pdfauthor={Alban Salazar Emilio Fabian, Auz Montezuma Juan Diego , Luisa Calapiña Henry Paul, Quillupangui Lozano Ana María},
+ pdfauthor={Alban Salazar Emilio Fabian, Auz Montezuma Juan Diego, Luisa Calapiña Henry Paul, Quillupangui Lozano Ana María},
  pdftitle={Taller de Configuración de Entorno WSL},
  pdfkeywords={},
  pdfsubject={},
@@ -39,7 +39,7 @@ ARQUITECTURA DE COMPUTADORES}
 \thispagestyle{fancy}
 
 \section{Objetivos}
-\label{sec:orgaf14a44}
+\label{sec:orga651d2c}
 
 \begin{itemize}
 \item Configurar y validar el entorno de trabajo para la asignatura de Arquitectura de Computadores en Linux o WSL.
@@ -48,7 +48,7 @@ ARQUITECTURA DE COMPUTADORES}
 \end{itemize}
 
 \section{Instrucciones}
-\label{sec:orgfb1f43d}
+\label{sec:org8f4d4a5}
 
 \begin{enumerate}
 \item Realice todas las actividades en Linux o en WSL.
@@ -68,9 +68,9 @@ busque el archivo o escriba:Puede insertar una imagen con la sintaxis:
 [[./images/image1.jpg]]
 \end{verbatim}
 \section{Actividades}
-\label{sec:org48f14ec}
+\label{sec:org88835f0}
 \subsection{Configuración de WSL con Ubuntu, \LaTeX, Python e Emacs}
-\label{sec:orge2d1c62}
+\label{sec:org2ae8804}
 
 \begin{enumerate}
 \item Verificación de entorno mamba/anaconda
@@ -81,7 +81,7 @@ busque el archivo o escriba:Puede insertar una imagen con la sintaxis:
 \end{enumerate}
 \end{enumerate}
 \subsubsection{Estudiante A: Alban Salazar Emilio Fabian}
-\label{sec:org5696e2e}
+\label{sec:org4a3f5d2}
 \begin{verbatim}
   mamba info
 \end{verbatim}
@@ -108,7 +108,7 @@ busque el archivo o escriba:Puede insertar una imagen con la sintaxis:
                platform : linux-64
 \end{verbatim}
 \subsubsection{Estudiante B: Auz Montezuma Juan Diego}
-\label{sec:org98cc879}
+\label{sec:orgbe3094f}
 \begin{verbatim}
   mamba info
 \end{verbatim}
@@ -118,24 +118,24 @@ busque el archivo o escriba:Puede insertar una imagen con la sintaxis:
           mamba version : 2.5.0
            curl version : libcurl/8.19.0 OpenSSL/3.6.1 zlib/1.3.2 zstd/1.5.7 libssh2/1.11.1 nghttp2/1.68.1 mit-krb5/1.22.2
      libarchive version : libarchive 3.8.6 zlib/1.3.2 liblzma/5.8.2 bz2lib/1.0.8 liblz4/1.10.0 libzstd/1.5.7 liblzo2/2.10 openssl/3.5.5 libb2/bundled
-       envs directories : /home/juand/miniforge3/envs
-          package cache : /home/juand/miniforge3/pkgs
-                          /home/juand/.mamba/pkgs
+       envs directories : /home/emilioalbanfs/miniforge3/envs
+          package cache : /home/emilioalbanfs/miniforge3/pkgs
+                          /home/emilioalbanfs/.mamba/pkgs
             environment : iccd332 (active)
-           env location : /home/juand/miniforge3/envs/iccd332
-      user config files : /home/juand/.mambarc
- populated config files : /home/juand/miniforge3/.condarc
+           env location : /home/emilioalbanfs/miniforge3/envs/iccd332
+      user config files : /home/emilioalbanfs/.mambarc
+ populated config files : /home/emilioalbanfs/miniforge3/.condarc
        virtual packages : __unix=0=0
-                          __linux=6.18.2=0
-                          __glibc=2.42=0
+                          __linux=6.6.87=0
+                          __glibc=2.39=0
                           __archspec=1=x86_64_v3
                channels : https://conda.anaconda.org/conda-forge/linux-64
                           https://conda.anaconda.org/conda-forge/noarch
-       base environment : /home/juand/miniforge3
+       base environment : /home/emilioalbanfs/miniforge3
                platform : linux-64
 \end{verbatim}
 \subsubsection{Estudiante C: Henry Luisa}
-\label{sec:org33c280f}
+\label{sec:org95517bc}
 \begin{verbatim}
   mamba info
 \end{verbatim}
@@ -163,7 +163,7 @@ busque el archivo o escriba:Puede insertar una imagen con la sintaxis:
 \end{verbatim}
 
 \subsubsection{Estudiante D: Quillupangui Lozano Ana Maria}
-\label{sec:org8d7c12d}
+\label{sec:orgbd0f1f4}
 \begin{verbatim}
   mamba info
 \end{verbatim}
@@ -189,8 +189,13 @@ busque el archivo o escriba:Puede insertar una imagen con la sintaxis:
        base environment : /home/emilioalbanfs/miniforge3
                platform : linux-64
 \end{verbatim}
+
+\begin{enumerate}
+\item Verificacion de Python
+\end{enumerate}
+
 \subsubsection{Estudiante A: Alban Salazar Emilio Fabian}
-\label{sec:org6a1a053}
+\label{sec:org1c11e30}
 \begin{verbatim}
     python --version
 \end{verbatim}
@@ -198,15 +203,15 @@ busque el archivo o escriba:Puede insertar una imagen con la sintaxis:
 Python 3.14.4
 \end{verbatim}
 \subsubsection{Estudiante B: Auz Montezuma Juan Diego}
-\label{sec:orgd1c3189}
+\label{sec:orgff0d061}
 \begin{verbatim}
     python --version
 \end{verbatim}
 \begin{verbatim}
-Python 3.11.15
+Python 3.14.4
 \end{verbatim}
 \subsubsection{Estudiante C: Henry Luisa}
-\label{sec:orgad46ddb}
+\label{sec:org9324e06}
 \begin{verbatim}
     python --version
 \end{verbatim}
@@ -214,7 +219,7 @@ Python 3.11.15
 Python 3.14.4
 \end{verbatim}
 \subsubsection{Estudiante D:Quillupangui Lozano Ana María}
-\label{sec:org273345d}
+\label{sec:orgfb50e48}
 \begin{verbatim}
     python --version 
 \end{verbatim}
@@ -228,7 +233,7 @@ Python 3.14.4
 Ejecute \texttt{emacs -{}-{}version} en la consola y desde Emacs.
 \end{enumerate}
 \subsubsection{Estudiante A: Alban Salazar Emilio Fabian}
-\label{sec:orgd8cb058}
+\label{sec:orgf4ef53a}
 \begin{verbatim}
    emacs --version
 \end{verbatim}
@@ -241,20 +246,20 @@ under the terms of the GNU General Public License.
 For more information about these matters, see the file named COPYING.
 \end{verbatim}
 \subsubsection{Estudiante B: Auz Montezuma Juan Diego}
-\label{sec:org9dbfdac}
+\label{sec:org65f0640}
 \begin{verbatim}
    emacs --version
 \end{verbatim}
 \begin{verbatim}
-GNU Emacs 30.2
-Copyright (C) 2025 Free Software Foundation, Inc.
+GNU Emacs 29.3
+Copyright (C) 2024 Free Software Foundation, Inc.
 GNU Emacs comes with ABSOLUTELY NO WARRANTY.
 You may redistribute copies of GNU Emacs
 under the terms of the GNU General Public License.
 For more information about these matters, see the file named COPYING.
 \end{verbatim}
 \subsubsection{Estudiante C: Henry Luisa}
-\label{sec:org5ffeafd}
+\label{sec:org2fc0699}
 \begin{verbatim}
    emacs --version
 \end{verbatim}
@@ -268,7 +273,7 @@ For more information about these matters, see the file named COPYING.
 \end{verbatim}
 
 \subsubsection{Estudiante D: Quillpangui Lozano Ana María}
-\label{sec:org365b063}
+\label{sec:org3224611}
 \begin{verbatim}
    emacs --version 
 \end{verbatim}
@@ -287,7 +292,7 @@ For more information about these matters, see the file named COPYING.
 Ejecute \texttt{latex -{}-{}version} en la consola y desde Emacs.
 \end{enumerate}
 \subsubsection{Estudiante A: Alban Salazar Emilio Fabian}
-\label{sec:orgdab2276}
+\label{sec:org28ce91d}
 \begin{verbatim}
    latex --version
 \end{verbatim}
@@ -306,26 +311,26 @@ Ejecute \texttt{latex -{}-{}version} en la consola y desde Emacs.
    Compiled with xpdf version 4.04
 \end{verbatim}
 \subsubsection{Estudiante B: Auz Montezuma Juan Diego}
-\label{sec:org957dace}
+\label{sec:org0dc877b}
 \begin{verbatim}
    latex --version
 \end{verbatim}
 \begin{verbatim}
-   pdfTeX 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux)
-   kpathsea version 6.4.2/dev
-   Copyright 2025 Han The Thanh (pdfTeX) et al.
+   pdfTeX 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian)
+   kpathsea version 6.3.5
+   Copyright 2023 Han The Thanh (pdfTeX) et al.
    There is NO warranty.  Redistribution of this software is
    covered by the terms of both the pdfTeX copyright and
    the Lesser GNU General Public License.
    For more information about these matters, see the file
    named COPYING and the pdfTeX source.
    Primary author of pdfTeX: Han The Thanh (pdfTeX) et al.
-   Compiled with libpng 1.6.50; using libpng 1.6.53
-   Compiled with zlib 1.3.1; using zlib 1.3.1
+   Compiled with libpng 1.6.43; using libpng 1.6.43
+   Compiled with zlib 1.3; using zlib 1.3
    Compiled with xpdf version 4.04
 \end{verbatim}
 \subsubsection{Estudiante C: Henry Luisa}
-\label{sec:org76c5a58}
+\label{sec:org3d5c24c}
 \begin{verbatim}
    latex --version
 \end{verbatim}
@@ -344,7 +349,7 @@ Ejecute \texttt{latex -{}-{}version} en la consola y desde Emacs.
    Compiled with xpdf version 4.04
 \end{verbatim}
 \subsubsection{Estudiante D:Quillpangui Lozano Ana María}
-\label{sec:org7ac358c}
+\label{sec:org6d635cf}
 \begin{verbatim}
    latex --version 
 \end{verbatim}
@@ -380,7 +385,7 @@ Complete la siguiente tabla si tuvo errores durante la configuración:
 \end{center}
 
 \subsection{Comandos Emacs Tutorial}
-\label{sec:org5a71b1c}
+\label{sec:org3b24a34}
 Seguir el tutorial integrado en Emacs al respecto de la navegación y
 operaciones más frecuentes. El tutorial puede ser accedido en Español
 utilizando el comando:
@@ -480,7 +485,7 @@ generar una nueva fila escriba presione la tecla TAB
 \texttt{C-x 1} & Dejar la ventana principal & \texttt{C-h ?} & Ayuda general\\[0pt]
 \end{longtable}
 \subsection{Comandos Emacs Juego}
-\label{sec:org16b7427}
+\label{sec:org580376c}
 En la anterior sección usted revisó los comandos de mayor interés
 sobre la manipulación de Emacs. Es hora de poner en práctica sus
 conocimientos. Realice unas 3 visitas al juego  \href{https://chat.qwen.ai/s/deploy/t\_23ff57ef-b59a-4bd7-9b79-54679b33686d}{Emacs-Trainer} y apunte
@@ -501,17 +506,17 @@ iteración & Puntaje\\[0pt]
 
 \begin{enumerate}
 \item Intento 1
-\label{sec:orge4eb5dc}
+\label{sec:orgd0d2cf9}
 \begin{center}
 \includegraphics[width=.9\linewidth]{./images/EmilioAlban-1.png}
 \end{center}
 \item Intento 2
-\label{sec:org60c2bde}
+\label{sec:orge090ebb}
 \begin{center}
 \includegraphics[width=.9\linewidth]{./images/EmilioAlban-2.png}
 \end{center}
 \item Intento 3
-\label{sec:org7608441}
+\label{sec:org19a7ab9}
 \begin{center}
 \includegraphics[width=.9\linewidth]{./images/EmilioAlban-3.png}
 \end{center}
@@ -530,17 +535,17 @@ iteración & Puntaje\\[0pt]
 \end{center}
 
 \item Intento 1
-\label{sec:orgbcedfa4}
+\label{sec:orgfb54c2f}
 \begin{center}
 \includegraphics[width=.9\linewidth]{./images/JuanAuz-1.png}
 \end{center}
 \item Intento 2
-\label{sec:org2a19f8f}
+\label{sec:org9c906fe}
 \begin{center}
 \includegraphics[width=.9\linewidth]{./images/JuanAuz-2.png}
 \end{center}
 \item Intento 3
-\label{sec:org26ad4d5}
+\label{sec:org6d1001d}
 \begin{center}
 \includegraphics[width=.9\linewidth]{./images/JuanAuz-3.png}
 \end{center}
@@ -557,17 +562,17 @@ iteración & Puntaje\\[0pt]
 \end{tabular}
 \end{center}
 \item Intento 1
-\label{sec:org477c1ad}
+\label{sec:org9ae7fd3}
 \begin{center}
 \includegraphics[width=.9\linewidth]{images/Henry-1.jpeg}
 \end{center}
 \item Intento 2
-\label{sec:org97399f5}
+\label{sec:org243cb8b}
 \begin{center}
 \includegraphics[width=.9\linewidth]{images/Henry-2.jpeg}
 \end{center}
 \item Intento 3
-\label{sec:org19013df}
+\label{sec:orge6b39ff}
 \begin{center}
 \includegraphics[width=.9\linewidth]{images/Henry-3.jpeg}
 \end{center}
@@ -588,27 +593,27 @@ iteración & Puntaje\\[0pt]
 \end{tabular}
 \end{center}
 \item Intento 1
-\label{sec:orgb91b6e7}
+\label{sec:orgcfbed26}
 \begin{center}
 \includegraphics[width=.9\linewidth]{./images/AnaQuillupangui-1.png}
 \end{center}
 
 \item Intento 2
-\label{sec:org394b6ff}
+\label{sec:org2757287}
 \begin{center}
 \includegraphics[width=.9\linewidth]{./images/AnaQuillupangui-2.png}
 \end{center}
 \item Intento 3
-\label{sec:org6330cc7}
+\label{sec:org5ec9091}
 \begin{center}
 \includegraphics[width=.9\linewidth]{./images/AnaQuillupangui-3.png}
 \end{center}
 \end{enumerate}
 
 \subsection{}
-\label{sec:org56fc366}
+\label{sec:orgf12c3cc}
 \subsection{Usando Emacs para tener Ayuda sobre Emacs}
-\label{sec:orgdb215f1}
+\label{sec:orgb2341fc}
 ¿Qué comandos le resultan más fáciles de usar y cuáles le son más
 extraños? Identifique 4 comandos que le sean fáciles y 4 que le
 resulten complicados. Revise qué dice la ayuda de Emacs sobre cada
@@ -673,7 +678,7 @@ an interactive native-compiled Lisp function in ‘isearch.el’.>Permite
 buscar texto en el archivo 
 
 \section{Equipo de Trabajo}
-\label{sec:orgfb5f46a}
+\label{sec:org8e6fc51}
 Complete la información de los integrantes de grupo e indique el líder
 de grupo.
 
@@ -682,17 +687,17 @@ de grupo.
 \hline
 Nombre & email & Rol\\[0pt]
 \hline
-Auz Montezuma Juan Diego & juan.auzmontezuma@epn.edu.ec & líder\\[0pt]
+Alban Salazar Emilio Fabian & emilio.alban@epn.edu.ec & líder\\[0pt]
 Luisa Calapiña Henry Paul & henry.luisa@epn.edu.ec & colaborador\\[0pt]
 Quillpangui Lozano Ana María & anamaria.quillpangui@epn.edu.ec & colaborador\\[0pt]
-Alban Salazar Emilio Fabian & emilio.alban@epn.edu.ec & colaborador\\[0pt]
+Auz Montezuma Juan Diego & juan.auzmontezuma@epn.edu.ec & colaborador\\[0pt]
  &  & \\[0pt]
 \hline
 \end{tabular}
 \end{center}
 
 \section{Verificación de Entregables [100\%]:}
-\label{sec:orgda56fbb}
+\label{sec:org9fea8ef}
 Ejecute \texttt{C-c C-c} sobre los ítems de tarea según se hayan cumplido o
 no. Si un ítem no pudo realizarse apunte en la siguiente sección las
 razones al respecto.
@@ -708,7 +713,7 @@ identificado el líder.
 PDF \texttt{M-x org-latex-export-to-pdf}
 \end{itemize}
 \subsection{Problemas con la Tarea:}
-\label{sec:orgbf6f398}
+\label{sec:org5b4962a}
 \begin{itemize}
 \item Tarea \(X_1\) no pudo completarse debido a
 \item Tarea \(X_2\) no pudo completarse debido a

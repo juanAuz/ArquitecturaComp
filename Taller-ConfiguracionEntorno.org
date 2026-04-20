@@ -6,8 +6,8 @@
 #+options: tasks:t tex:t timestamp:t title:t toc:nil todo:t |:t
 #+title: Taller de Configuración de Entorno WSL
 #+date: 2026-04-08
-#+author:Alban Salazar Emilio Fabian, Auz Montezuma Juan Diego , Luisa Calapiña Henry Paul, Quillupangui Lozano Ana María
-#+email: correo emilio.alban@epn.edu.ec, juan.auzmontezuma@epn.edu.ec, henry.luisa@epn.edu.ec, anamaria.quillpangui@epn.edu.ec
+#+author:Alban Salazar Emilio Fabian, Auz Montezuma Juan Diego, Luisa Calapiña Henry Paul, Quillupangui Lozano Ana María
+#+email: emilio.alban@epn.edu.ec, juan.auzmontezuma@epn.edu.ec, henry.luisa@epn.edu.ec, anamaria.quillpangui@epn.edu.ec
 #+language: Espanol
 #+select_tags: export
 #+exclude_tags: noexport
@@ -71,7 +71,7 @@ busque el archivo o escriba:Puede insertar una imagen con la sintaxis:
    2. Ejecute ~mamba info~ con ~C-c C-c~ dentro del bloque de código.
    3. Si el comando falla, active un entorno con ~mamba activate iccd332~ e intente de nuevo.
 *** Estudiante A: Alban Salazar Emilio Fabian
-#+begin_src shell :exports both :results verbatim :eval no
+#+begin_src shell :exports both :results verbatim
   mamba info
 #+end_src
 #+RESULTS:
@@ -98,7 +98,7 @@ busque el archivo o escriba:Puede insertar una imagen con la sintaxis:
                platform : linux-64
 #+end_example
 *** Estudiante B: Auz Montezuma Juan Diego
-#+begin_src shell :exports both :results verbatim :eval no
+#+begin_src shell :exports both :results verbatim 
   mamba info
 #+end_src
 #+RESULTS:
@@ -125,7 +125,7 @@ busque el archivo o escriba:Puede insertar una imagen con la sintaxis:
                platform : linux-64
 #+end_example
 *** Estudiante C: Henry Luisa
-#+begin_src shell :exports both :results verbatim :eval yes
+#+begin_src shell :exports both :results verbatim 
   mamba info
 #+end_src
 #+RESULTS:
@@ -179,20 +179,23 @@ busque el archivo o escriba:Puede insertar una imagen con la sintaxis:
        base environment : /home/ani_quillu/miniforge3
                platform : linux-64
 #+end_example
+
+2. Verificacion de Python
+   
 *** Estudiante A: Alban Salazar Emilio Fabian
-   #+begin_src shell :exports both :results verbatim :eval no
+   #+begin_src shell :exports both :results verbatim
     python --version
    #+end_src
    #+RESULTS:
    : Python 3.14.4
 *** Estudiante B: Auz Montezuma Juan Diego
-   #+begin_src shell :exports both :results verbatim :eval no
+   #+begin_src shell :exports both :results verbatim
     python --version
    #+end_src
    #+RESULTS:   
    : Python 3.11.15
 *** Estudiante C: Henry Luisa
-   #+begin_src shell :exports both :results verbatim :eval yes
+   #+begin_src shell :exports both :results verbatim
     python --version
    #+end_src
    #+RESULTS:
@@ -207,7 +210,7 @@ busque el archivo o escriba:Puede insertar una imagen con la sintaxis:
 3. Verificacion de Emacs
    Ejecute ~emacs --version~ en la consola y desde Emacs.
 *** Estudiante A: Alban Salazar Emilio Fabian
-   #+begin_src shell :exports both :results verbatim :eval no
+   #+begin_src shell :exports both :results verbatim 
    emacs --version
    #+end_src
    #+RESULTS:
@@ -218,7 +221,7 @@ busque el archivo o escriba:Puede insertar una imagen con la sintaxis:
    : under the terms of the GNU General Public License.
    : For more information about these matters, see the file named COPYING.
 *** Estudiante B: Auz Montezuma Juan Diego 
-   #+begin_src shell :exports both :results verbatim :eval no
+   #+begin_src shell :exports both :results verbatim 
    emacs --version
    #+end_src
    #+RESULTS:   
@@ -229,7 +232,7 @@ busque el archivo o escriba:Puede insertar una imagen con la sintaxis:
    : under the terms of the GNU General Public License.
    : For more information about these matters, see the file named COPYING.
 *** Estudiante C: Henry Luisa
-   #+begin_src shell :exports both :results verbatim :eval yes
+   #+begin_src shell :exports both :results verbatim 
    emacs --version
    #+end_src
    #+RESULTS:
@@ -255,7 +258,7 @@ busque el archivo o escriba:Puede insertar una imagen con la sintaxis:
 4. Verificacion de LaTeX
    Ejecute ~latex --version~ en la consola y desde Emacs.
 *** Estudiante A: Alban Salazar Emilio Fabian
-   #+begin_src shell :exports both :results verbatim :eval no
+   #+begin_src shell :exports both :results verbatim 
    latex --version
    #+end_src
    #+RESULTS:
@@ -274,7 +277,7 @@ busque el archivo o escriba:Puede insertar una imagen con la sintaxis:
    Compiled with xpdf version 4.04
    #+end_example
 *** Estudiante B: Auz Montezuma Juan Diego
-   #+begin_src shell :exports both :results verbatim :eval no
+   #+begin_src shell :exports both :results verbatim 
    latex --version
    #+end_src
    #+RESULTS:   
@@ -293,7 +296,7 @@ busque el archivo o escriba:Puede insertar una imagen con la sintaxis:
    Compiled with xpdf version 4.04
    #+end_example
 *** Estudiante C: Henry Luisa
-   #+begin_src shell :exports both :results verbatim :eval yes
+   #+begin_src shell :exports both :results verbatim 
    latex --version
    #+end_src
    #+RESULTS:
@@ -516,10 +519,10 @@ de grupo.
 |------------------------------+---------------------------------+-------------|
 | Nombre                       | email                           | Rol         |
 |------------------------------+---------------------------------+-------------|
-| Auz Montezuma Juan Diego     | juan.auzmontezuma@epn.edu.ec    | líder       |
+| Alban Salazar Emilio Fabian  | emilio.alban@epn.edu.ec         | líder       |
 | Luisa Calapiña Henry Paul    | henry.luisa@epn.edu.ec          | colaborador |
 | Quillpangui Lozano Ana María | anamaria.quillpangui@epn.edu.ec | colaborador |
-| Alban Salazar Emilio Fabian  | emilio.alban@epn.edu.ec         | colaborador |
+| Auz Montezuma Juan Diego     | juan.auzmontezuma@epn.edu.ec    | colaborador |
 |                              |                                 |             |
 |------------------------------+---------------------------------+-------------|
 
