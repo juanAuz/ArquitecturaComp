@@ -34,7 +34,7 @@
 #+LATEX_HEADER: \usepackage{longtable}
 
 #+begin_export latex
-\fancyhead[C]{\includegraphics[scale=0.05]{../images/logoEPN.jpg}\\
+\fancyhead[C]{\includegraphics[scale=0.05]{./images/logoEpn.jpg}\\
 ESCUELA POLITECNICA NACIONAL\\FACULTAD DE INGENIERIA DE SISTEMAS\\
 ARQUITECTURA DE COMPUTADORES}
 \thispagestyle{fancy}
@@ -154,7 +154,7 @@ busque el archivo o escriba:Puede insertar una imagen con la sintaxis:
 
 *** Estudiante D: Quillupangui Lozano Ana Maria
 #+begin_src shell :exports both :results verbatim
-  mamba info
+mamba info
 #+end_src
 #+RESULTS:
 #+begin_example
@@ -206,6 +206,7 @@ busque el archivo o escriba:Puede insertar una imagen con la sintaxis:
    #+end_src
    #+RESULTS:
    : Python 3.11.15
+  
    
 3. Verificacion de Emacs
    Ejecute ~emacs --version~ en la consola y desde Emacs.
@@ -245,15 +246,10 @@ busque el archivo o escriba:Puede insertar una imagen con la sintaxis:
  
 *** Estudiante D: Quillpangui Lozano Ana María
    #+begin_src shell :exports both :results verbatim
-   emacs --version 
+  emacs --version
    #+end_src
    #+RESULTS:
-   : GNU Emacs 29.3
-   : Copyright (C) 2024 Free Software Foundation, Inc.
-   : GNU Emacs comes with ABSOLUTELY NO WARRANTY.
-   : You may redistribute copies of GNU Emacs
-   : under the terms of the GNU General Public License.
-   : For more information about these matters, see the file named COPYING.
+
    
 4. Verificacion de LaTeX
    Ejecute ~latex --version~ en la consola y desde Emacs.
@@ -316,7 +312,7 @@ busque el archivo o escriba:Puede insertar una imagen con la sintaxis:
    #+end_example
 *** Estudiante D:Quillpangui Lozano Ana María
    #+begin_src shell :exports both :results verbatim
-   latex --version 
+   latex --version
    #+end_src
    #+RESULTS:
    #+begin_example
